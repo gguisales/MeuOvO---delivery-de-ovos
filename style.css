@@ -1,18 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header{
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 5vh;
-    display: flex;
-    justify-content: center;
+    background-color: black;
 }
 
-header img{
-    width: 100px;
+header h1{
+    font-family: 'Slackey', cursive;
+    padding-right: 20px;
+    color: gold;
+    font-size: 20pt;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navform{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+form{
+    /*border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    font-size: 12pt;
+}
+
+input{
+    border: 1px solid black;
+    width: 25vw;
+    height: 5vh;
+    margin-bottom: 5vh;
+}
+
+#entrar{
+    border: none;
+    background-color: yellow;
+    font-size: 12pt;
+    width: 25vw;
+    height: 5vh;
+    margin-bottom: 5vh;
+}
+
+#entrar:hover{
+    background-color: black;
+    color: white;
+}
+
+#linkazul{
+    font-size: 12pt;
+}
+
+@media screen and (max-height: 768px){
+    input{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-height: 425px){
+    input{
+        width: 80vw;
+    }
 }

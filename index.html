@@ -1,23 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Início</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+      function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </head>
 <body>
     <header>
-        <img src="/images/meusovo-logo.png" alt="">
+        <span style="color:white;padding:0;font-size:40px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+        <h1>Meus OvO</h1>
+        <button><ion-icon href="#" name="person-outline" size="large"></ion-icon></button>
     </header>
-    <nav>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-    </nav>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">Novidades</a>
+            <a href="#">Categorias</a>
+            <a href="#">Criar Conta</a>
+            <a href="#">Contato</a>
+    </div>
+    <section>
+        <nav class="navform">
+                <form>
+                    <div>
+                        <h1 style="font-size:20pt;">Faça login</h1>
+                    </div>
+                    <div>
+                        <label for="login" class="form-label">Usuário</label>
+                        <input type="email" class="form-control" id="login" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                    <div>
+                        <button id="entrar" class="btn btn-dark">Entrar</button>
+                    </div>
+                    <div>
+                        <a id="linkazul" href="esquecisenha.html">Esqueci a senha</a>
+                        <a id="linkazul" href="signup.html">Criar conta</a>
+                    </div>
+                </form>
+        </nav>
+    </section>
 </body>
 </html>
